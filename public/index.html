@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <style>
+    body {
+      background-color: white
+    }
+
+    #wrapper {
+      /* width: 960px; */
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-top: 5%; */
+      /* border: 3px solid black; */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 70%;
+      height: 700px;
+      /* border: 3px solid black; */
+    }
+
+    #notes {
+      float: right;
+      width: 25%;
+      /* border: 3px solid black; */
+      padding: 5px;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      /* background-color: lightblue; */
+      border: 3px solid black;
+      margin: 5px;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      border: 3px solid black;
+      padding: 20px;
+    }
+
+    #savenote,
+    #scrapeNew,
+    #deletenote {
+      /* margin: 0 auto 0 auto; */
+      border: 3px solid black;
+      /* float: right; */
+      margin: 10px;
+      background-color: white;
+    }
+
+    #savenote:hover,
+    #scrapeNew:hover {
+      /* margin: 0 auto 0 auto; */
+      border: 3px solid black;
+      /* float: right; */
+      margin: 10px;
+      background-color: black;
+      color: white
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .spaceIt {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>News Scraper...</h1>
+    <h2>
+      <i>...Note Taker</i>
+    </h2>
+    <button id="scrapeNew">Scrape New Articles</button>
+    <br>
+    <div id="articles"></div>
+
+    <!-- <div id="sidebar">
+      <h1>
+        Saved Notes:
+      </h1>
+      <div id="pastNotes">
+      </div>
+      <br>
+      <hr>
+
+      <h1>
+        Add Note For:
+      </h1> -->
+
+      <div id="notes">
+        <!-- <h2 id="addNoteForArticleTitle"></h2>
+        <input id="titleinput" name="title">
+        <textarea id="bodyinput" name="body"></textarea>
+        <button data-id="" id="savenote">Save Note</button> -->
+      </div>
+
+    <!-- </div> -->
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
